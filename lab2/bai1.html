@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = parseInt(prompt("Nhập số nguyên a:"));
+        let b = parseInt(prompt("Nhập số nguyên b:"));
+        let c = parseInt(prompt("Nhập số nguyên c:"));
+        if (a == 0) {
+
+        } else {
+            let delta = Math.pow(b, 2) - 4 * a * c;
+
+            if (delta == 0) {
+                let x = -b / (2 * a);
+                document.writeln("phuong trinh co nghiem kep: " + x);
+            } else if (delta < 0) {
+                document.writeln("phuong trinh vo nghiem.");
+            } else {
+                document.writeln("phuong trinh co 2 nghiem phan biet: <br>");
+                let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+                let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+                document.writeln("<br> ngiem x1 = " + x1);
+                document.writeln("<br> ngiem x2 = " + x2);
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>
